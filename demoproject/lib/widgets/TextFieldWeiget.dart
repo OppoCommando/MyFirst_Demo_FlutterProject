@@ -20,7 +20,7 @@ class TextFieldWeiget extends StatelessWidget{
             style: TextStyle(color: blueColor, fontSize: 12),
           ),
           SizedBox(
-            height: 5,
+            height: 10,
           ),
           TextField(
               obscureText: isPassword,
