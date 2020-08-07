@@ -1,6 +1,7 @@
 
 import 'package:demoproject/src/Activities/HomeMain.dart';
 import 'package:demoproject/src/Activities/LoginPage.dart';
+import 'package:demoproject/src/Activities/SignUpPage.dart';
 import 'package:flutter/material.dart';
 
 import 'src/Fragments/EventPage.dart';

@@ -4,7 +4,10 @@ import 'package:demoproject/design/BuildBackgroundTopCircle.dart';
 import 'package:demoproject/widgets/SingInBottom.dart';
 import 'package:demoproject/widgets/TextFieldWeiget.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import 'SignUpPage.dart';
 
 class  LoginPage extends StatefulWidget
 {
@@ -21,10 +24,25 @@ class  LoginPage extends StatefulWidget
 class _LoginPage extends State<LoginPage>{
 
   bool _showSignIn;
+  final yellowColor = Color(0XFFfdd835);
+  final blueColor = Color(0XFF5e92f3);
+  TapGestureRecognizer _tapGestureRecognizer;
 
   @override
+  void initState() {
+    super.initState();
+
+    _tapGestureRecognizer = TapGestureRecognizer()
+      ..onTap = () {
+        setState(() {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+          print("Hello");
+        });
+      };
+  }
+  @override
   Widget build(BuildContext context) {
-    _showSignIn=false;
+    _showSignIn=true;
     return
         Scaffold(
           body: Stack(
@@ -74,7 +92,22 @@ class _LoginPage extends State<LoginPage>{
 
                                     ),
                                 ),
-                                SingInBottom()
+                                SingInBottom(),
+                                RichText(
+                                  text: TextSpan(
+                                      text: "Don't have an account? ",
+                                      style: TextStyle(color: Colors.black),
+                                      children: [
+                                        TextSpan(
+                                            text: "Create an Account",
+                                            recognizer: _tapGestureRecognizer,
+                                            style: TextStyle(
+                                              decoration: TextDecoration.underline,
+                                              color: blueColor,
+                                              fontWeight: FontWeight.bold,
+                                            ))
+                                      ]),
+                                )
                               ],
                           ),
 

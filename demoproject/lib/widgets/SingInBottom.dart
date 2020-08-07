@@ -1,4 +1,6 @@
+import 'package:demoproject/src/Activities/HomeMain.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class SingInBottom extends StatelessWidget{
@@ -6,9 +8,12 @@ class SingInBottom extends StatelessWidget{
   Widget build(BuildContext context) {
     final yellowColor = Color(0XFFfdd835);
     final blueColor = Color(0XFF5e92f3);
+    TapGestureRecognizer _tapGestureRecognizer;
+
+
     // TODO: implement build
     return Container(
-      margin: EdgeInsets.only(top: 50),
+      margin: EdgeInsets.only(top: 30),
       child: Column(
         children: [
           InkWell(
@@ -24,13 +29,15 @@ class SingInBottom extends StatelessWidget{
             ),
           ),
           SizedBox(
-            height: 25,
+            height: 15,
           ),
           RaisedButton(
             color: blueColor,
             elevation: 10,
             padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeMain()));
+            },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
@@ -52,12 +59,13 @@ class SingInBottom extends StatelessWidget{
               ],
             ),
           ),
-
+          SizedBox(
+            height: 20,
+          ),
 
         ],
       ),
     );
-
   }
   
 }
