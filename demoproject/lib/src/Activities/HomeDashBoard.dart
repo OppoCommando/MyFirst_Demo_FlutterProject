@@ -17,11 +17,16 @@ class HomeDashBoard extends StatefulWidget{
   Widget build(BuildContext context) {
     return(Scaffold(
       appBar: AppBar(
-        title: Text('My Home Page ',style: headStyle,),
+        automaticallyImplyLeading: false,
+        title:Text('Faceboook',
+        style: headStyle,
+        ),
         backgroundColor: Colors.white,
         elevation: 0.0,
         actions: <Widget>[
           AppBarSearchIcon(FontAwesomeIcons.search),
+          AppBarSearchIcon(FontAwesomeIcons.search),
+
           
         ],
         ),
