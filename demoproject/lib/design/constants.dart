@@ -11,6 +11,6 @@ Color Active_facebook_color = Color(0xffE7F3FF);
 
 
 TextStyle headStyle = GoogleFonts.roboto(
-  textStyle: TextStyle(fontWeight: FontWeight.w900, fontSize:32,color: facebook_blue_color,)
+  textStyle: TextStyle(fontWeight: FontWeight.w900, fontSize:32,color: facebook_blue_color,letterSpacing: -1.2,)
   
 );
