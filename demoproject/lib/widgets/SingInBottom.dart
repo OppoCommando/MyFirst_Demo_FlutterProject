@@ -1,5 +1,6 @@
 import 'package:demoproject/src/Activities/HomeDashBoard.dart';
 import 'package:demoproject/src/Activities/HomeMain.dart';
+import 'package:demoproject/src/Activities/NavScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,7 @@ class SingInBottom extends StatelessWidget{
             elevation: 10,
             padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeDashBoard()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => NavScreen()));
             },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

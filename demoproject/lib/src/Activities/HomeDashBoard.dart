@@ -28,7 +28,8 @@ class HomeDashBoard extends StatefulWidget{
       onTap: ()=>FocusScope.of(context).unfocus(),
       child: Scaffold(
         body: Responsive(
-          mobile:_HomeScreenMobile(scrollController: _trackingScrollController),
+          mobile:_HomeScreenMobile(scrollController: _trackingScrollController), 
+          desktop: null,
                   ),
                 ),
               );
