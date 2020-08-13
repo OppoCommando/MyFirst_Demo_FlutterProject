@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:demoproject/src/Activities/HomeDashBoard.dart';
 import 'package:demoproject/src/Fragments/ContactPage.dart';
 import 'package:demoproject/src/Fragments/EventPage.dart';
+import 'package:demoproject/src/Fragments/GroupsPage.dart';
 import 'package:demoproject/src/Fragments/HomePage.dart';
 import 'package:demoproject/src/Fragments/ProfilePage.dart';
 import 'package:demoproject/widgets/CustomTapBar.dart';
@@ -16,30 +17,32 @@ class NavScreen extends StatefulWidget{
   class _NavScreenState extends State<NavScreen>
    {
        final List<Widget> _screens = [
-         HomeDashBoard(),
-         ContactPage(),
+         
+         GroupsPage(),
          EventPage(),
+         HomeDashBoard(),
          HomePage(),
          ContactPage(),
-         ProfilePage()
+        // ProfilePage()
 
          ];
 
   final List<IconData> _icons = const [
-    Icons.home,
-    Icons.ondemand_video,
-    MdiIcons.accountCircleOutline,
+    
     MdiIcons.accountGroupOutline,
+    Icons.ondemand_video,
+    Icons.home,
+    MdiIcons.accountCircleOutline,
     MdiIcons.bellOutline,
-    Icons.menu,
+   // Icons.menu,
   ];
 
   int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
-    final Size screenSize = MediaQuery.of(context).size;
-     GlobalKey _bottomNavigationKey = GlobalKey();
+    //final Size screenSize = MediaQuery.of(context).size;
+    // GlobalKey _bottomNavigationKey = GlobalKey();
    
     return DefaultTabController(
        length: _icons.length,
@@ -50,24 +53,17 @@ class NavScreen extends StatefulWidget{
             index: _selectedIndex,
             children: _screens,
           ),
-          bottomNavigationBar: 
-             CurvedNavigationBar(
-                key: _bottomNavigationKey, 
+          bottomNavigationBar: Container(
+                padding: const EdgeInsets.only(bottom: 5.0),
+                
                 color: Colors.white,
-                items: <Widget>[
-                    Icon(Icons.add, size: 30),
-                    Icon(Icons.list, size: 30),
-                    Icon(Icons.compare_arrows, size: 30),
-                    Icon(Icons.add, size: 30),
-                    Icon(Icons.list, size: 30),
-                    Icon(Icons.compare_arrows, size: 30),
-                 ],
-                 onTap: (index) {
-            setState(() {
-              _selectedIndex = index;
-            });
-          },
+                child: CustomTapBar(
+                   _icons,
+                   _selectedIndex,
+                  (index) => setState(() => _selectedIndex = index),
                 ),
+              )
+            
               )
             
       

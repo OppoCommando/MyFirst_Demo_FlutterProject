@@ -6,13 +6,13 @@ import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //import 'package:json/components/app_bar_icon.dart';
 
-class HomeDashBoard extends StatefulWidget{
+class GroupsPage extends StatefulWidget{
   @override
- _HomeDashBoard createState() => _HomeDashBoard();
+ _GroupsPage createState() => _GroupsPage();
    
  }
  
- class _HomeDashBoard extends State<HomeDashBoard> 
+ class _GroupsPage extends State<GroupsPage> 
  {
     final TrackingScrollController _trackingScrollController =
       TrackingScrollController();
@@ -58,14 +58,14 @@ class _HomeScreenMobile  extends StatelessWidget
          automaticallyImplyLeading: false,
           brightness: Brightness.light,
           backgroundColor: Colors.white,
-          title:Text('Faceboook',
+          title:Text('Groups',
           style: headStyle,
         ),
         centerTitle: false,
         floating: true,
          actions: <Widget>[
           AppBarSearchIcon(FontAwesomeIcons.search),
-          AppBarSearchIcon(FontAwesomeIcons.search),
+          
           ],
         )
       ],

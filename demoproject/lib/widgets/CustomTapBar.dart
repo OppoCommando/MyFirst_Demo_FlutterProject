@@ -2,18 +2,25 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomTapBar extends StatelessWidget{
-final List<IconData> icons;
-  final int selectedIndex;
-  final Function(int) onTap;
-  final bool isBottomIndicator;
+ List<IconData> icons;
+   int selectedIndex;
+   Function(int) onTap;
+   bool isBottomIndicator;
 
-  const CustomTapBar({
+  /* CustomTapBar({
     Key key,
     @required this.icons,
     @required this.selectedIndex,
     @required this.onTap,
     this.isBottomIndicator = false,
-  }) : super(key: key);
+  }) : super(key: key);*/
+
+  CustomTapBar(List<IconData> icons, int selectedIndex,Function(int) onTap){
+     this.icons=icons;
+    this.selectedIndex=selectedIndex;
+    this.onTap=onTap;
+     this.isBottomIndicator = false;
+  }
 
 
   @override
@@ -30,7 +37,7 @@ final List<IconData> icons;
               )
             : Border(
                 top: BorderSide(
-                  color: Colors.blue,
+                  color: Colors.red,
                   width: 3.0,
                 ),
               ),
