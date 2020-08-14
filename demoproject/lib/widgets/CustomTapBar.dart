@@ -29,15 +29,15 @@ class CustomTapBar extends StatelessWidget{
       indicatorPadding: EdgeInsets.zero,
       indicator: BoxDecoration(
         border: isBottomIndicator
-            ? Border(
+        ? Border(
                 bottom: BorderSide(
                   color: Colors.blue,
                   width: 3.0,
                 ),
               )
             : Border(
-                top: BorderSide(
-                  color: Colors.red,
+                  top: BorderSide(
+                  color: Colors.blue,
                   width: 3.0,
                 ),
               ),

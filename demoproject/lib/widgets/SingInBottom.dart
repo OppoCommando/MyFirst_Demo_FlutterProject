@@ -1,3 +1,4 @@
+import 'package:demoproject/src/Activities/CustomNavbarScreen.dart';
 import 'package:demoproject/src/Activities/HomeDashBoard.dart';
 import 'package:demoproject/src/Activities/HomeMain.dart';
 import 'package:demoproject/src/Activities/NavScreen.dart';
@@ -38,7 +39,7 @@ class SingInBottom extends StatelessWidget{
             elevation: 10,
             padding: EdgeInsets.symmetric(horizontal: 70, vertical: 12),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => NavScreen()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CustomNavbarScreen()));
             },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

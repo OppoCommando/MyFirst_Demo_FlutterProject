@@ -59,7 +59,7 @@ class _HomeScreenMobile  extends StatelessWidget
           brightness: Brightness.light,
           backgroundColor: Colors.white,
           title:Text('Groups',
-          style: headStyle,
+          style: headStyleForOther,
         ),
         centerTitle: false,
         floating: true,
