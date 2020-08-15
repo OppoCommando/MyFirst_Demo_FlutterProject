@@ -21,7 +21,7 @@ class HomeMain extends StatelessWidget{
         PageRoutes.contact: (context) => ContactPage(),
         PageRoutes.event: (context) => EventPage(),
         PageRoutes.profile: (context) => ProfilePage(),
-        PageRoutes.notification: (context) => NotificationPage(),
+        
       },
     );
   }

@@ -33,12 +33,7 @@ class NavigationDrawer extends StatelessWidget {
                Navigator.pushReplacementNamed(context, PageRoutes.event),
          ),
          Divider(),
-         createDrawerBodyItem(
-           icon: Icons.notifications_active,
-           text: 'Notifications',
-           onTap: () =>
-               Navigator.pushReplacementNamed(context, PageRoutes.notification),
-         ),
+        
          createDrawerBodyItem(
            icon: Icons.contact_phone,
            text: 'Contact Info',

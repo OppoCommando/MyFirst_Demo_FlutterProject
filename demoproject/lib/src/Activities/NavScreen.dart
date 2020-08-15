@@ -1,5 +1,5 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:demoproject/src/Activities/HomeDashBoard.dart';
+import 'package:demoproject/src/Fragments/HomeDashBoard.dart';
 import 'package:demoproject/src/Fragments/ContactPage.dart';
 import 'package:demoproject/src/Fragments/EventPage.dart';
 import 'package:demoproject/src/Fragments/GroupsPage.dart';

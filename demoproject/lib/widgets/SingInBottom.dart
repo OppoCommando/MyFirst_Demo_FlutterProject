@@ -1,5 +1,5 @@
 import 'package:demoproject/src/Activities/CustomNavbarScreen.dart';
-import 'package:demoproject/src/Activities/HomeDashBoard.dart';
+import 'package:demoproject/src/Fragments/HomeDashBoard.dart';
 import 'package:demoproject/src/Activities/HomeMain.dart';
 import 'package:demoproject/src/Activities/NavScreen.dart';
 import 'package:flutter/cupertino.dart';

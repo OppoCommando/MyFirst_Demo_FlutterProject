@@ -6,13 +6,13 @@ import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 //import 'package:json/components/app_bar_icon.dart';
 
-class HomeDashBoard extends StatefulWidget{
+class VideoPage extends StatefulWidget{
   @override
- _HomeDashBoard createState() => _HomeDashBoard();
+ _VideoPage createState() => _VideoPage();
    
  }
  
- class _HomeDashBoard extends State<HomeDashBoard> 
+ class _VideoPage extends State<VideoPage> 
  {
     final TrackingScrollController _trackingScrollController =
       TrackingScrollController();
@@ -27,6 +27,7 @@ class HomeDashBoard extends StatefulWidget{
     return GestureDetector(
       onTap: ()=>FocusScope.of(context).unfocus(),
       child: Scaffold(
+        backgroundColor: facebook_dgrey_color,
         body: Responsive(
           mobile:_HomeScreenMobile(scrollController: _trackingScrollController), 
           desktop: null,
@@ -58,14 +59,14 @@ class _HomeScreenMobile  extends StatelessWidget
          automaticallyImplyLeading: false,
           brightness: Brightness.light,
           backgroundColor: Colors.white,
-          title:Text('Faceboook',
-          style: headStyle,
+          title:Text('Watch',
+          style: headStyleForOther,
         ),
         centerTitle: false,
         floating: true,
          actions: <Widget>[
           AppBarSearchIcon(FontAwesomeIcons.search),
-          AppBarSearchIcon(FontAwesomeIcons.search),
+          
           ],
         )
       ],
