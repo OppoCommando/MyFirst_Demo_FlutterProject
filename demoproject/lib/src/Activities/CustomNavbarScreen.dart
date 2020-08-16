@@ -19,7 +19,6 @@ class CustomNavbarScreen extends StatefulWidget{
   class _CustomNavbarScreenState extends State<CustomNavbarScreen>
    {
        final List<Widget> _screens = [
-         
          GroupsPage(),
          VideoPage(),
          HomeDashBoard(),
@@ -66,7 +65,7 @@ class CustomNavbarScreen extends StatefulWidget{
             ],
             color: Colors.blue,
             buttonBackgroundColor: Colors.blue,
-            backgroundColor: facebook_dgrey_color,
+            backgroundColor:facebook_dgrey_color,
             animationCurve: Curves.easeInOut,
             animationDuration: Duration(milliseconds: 600),
             onTap: (index) => setState(() => _selectedIndex = index)),

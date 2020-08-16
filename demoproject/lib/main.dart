@@ -1,4 +1,5 @@
 
+import 'package:demoproject/src/Activities/CustomNavbarScreen.dart';
 import 'package:demoproject/src/Activities/HomeMain.dart';
 import 'package:demoproject/src/Activities/LoginPage.dart';
 import 'package:demoproject/src/Activities/SignUpPage.dart';

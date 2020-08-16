@@ -1,5 +1,6 @@
 import 'package:demoproject/design/constants.dart';
 import 'package:demoproject/widgets/AppBarSearchIcon.dart';
+import 'package:demoproject/widgets/PostDeclareField.dart';
 import 'package:demoproject/widgets/Responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -60,7 +61,7 @@ class _HomeScreenMobile  extends StatelessWidget
          automaticallyImplyLeading: false,
           brightness: Brightness.light,
           backgroundColor: Colors.white,
-          title:Text('Faceboook',
+          title:Text('Mybook',
           style: headStyle,
         ),
         centerTitle: false,
@@ -69,7 +70,67 @@ class _HomeScreenMobile  extends StatelessWidget
           AppBarSearchIcon(FontAwesomeIcons.search),
           AppBarSearchIcon(FontAwesomeIcons.search),
           ],
-        )
+        ),
+
+        SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+         SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+        SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+        SliverPadding(
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 5.0),//(l,t,r,b)
+          sliver: SliverToBoxAdapter(
+            child:PostDeclareField("Hi") ,),
+        ),
+        
+
+        
       ],
         )
         );
