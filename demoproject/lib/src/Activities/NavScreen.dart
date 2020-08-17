@@ -1,14 +1,5 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:demoproject/src/Fragments/HomeDashBoard.dart';
-import 'package:demoproject/src/Fragments/ContactPage.dart';
-import 'package:demoproject/src/Fragments/EventPage.dart';
-import 'package:demoproject/src/Fragments/GroupsPage.dart';
-import 'package:demoproject/src/Fragments/HomePage.dart';
-import 'package:demoproject/src/Fragments/ProfilePage.dart';
-import 'package:demoproject/widgets/CustomTapBar.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:demoproject/ImportPackages/importpackage.dart';
+
 
 class NavScreen extends StatefulWidget{
   _NavScreenState  createState()=>_NavScreenState();

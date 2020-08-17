@@ -1,17 +1,11 @@
-import 'package:demoproject/src/Activities/CustomNavbarScreen.dart';
-import 'package:demoproject/src/Fragments/HomeDashBoard.dart';
-import 'package:demoproject/src/Activities/HomeMain.dart';
-import 'package:demoproject/src/Activities/NavScreen.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
+import 'package:demoproject/ImportPackages/importpackage.dart';
 
 class SingInBottom extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final yellowColor = Color(0XFFfdd835);
     final blueColor = Color(0XFF5e92f3);
-    TapGestureRecognizer _tapGestureRecognizer;
+    //TapGestureRecognizer _tapGestureRecognizer;
 
 
     // TODO: implement build

@@ -1,12 +1,7 @@
 
 import 'package:demoproject/src/Activities/CustomNavbarScreen.dart';
-import 'package:demoproject/src/Activities/HomeMain.dart';
-import 'package:demoproject/src/Activities/LoginPage.dart';
-import 'package:demoproject/src/Activities/SignUpPage.dart';
-import 'package:flutter/material.dart';
+import 'package:demoproject/ImportPackages/importpackage.dart';
 
-import 'src/Fragments/EventPage.dart';
-import 'src/Fragments/HomePage.dart';
 
 void main() => runApp(new MyApp());
 

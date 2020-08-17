@@ -1,14 +1,5 @@
-import 'package:demoproject/design/BuildAvatarContainer.dart';
-import 'package:demoproject/design/BuildBackgroundBottomCircle.dart';
-import 'package:demoproject/design/BuildBackgroundTopCircle.dart';
-import 'package:demoproject/widgets/SingInBottom.dart';
-import 'package:demoproject/widgets/SingUpBottom.dart';
-import 'package:demoproject/widgets/TextFieldWeiget.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
+import 'package:demoproject/ImportPackages/importpackage.dart';
 
-import 'LoginPage.dart';
 
 class SignUpPage extends StatefulWidget{
   @override

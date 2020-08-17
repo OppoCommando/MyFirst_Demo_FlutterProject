@@ -1,7 +1,5 @@
 
-import 'package:demoproject/widgets/NavigationDrawer.dart';
-import 'package:flutter/material.dart';
-
+import 'package:demoproject/ImportPackages/importpackage.dart';
 class ProfilePage extends StatelessWidget {
  static const String routeName = '/profilePage';
 

@@ -1,10 +1,4 @@
-import 'package:demoproject/design/constants.dart';
-import 'package:demoproject/widgets/AppBarSearchIcon.dart';
-import 'package:demoproject/widgets/PostDeclareField.dart';
-import 'package:demoproject/widgets/Responsive.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:demoproject/ImportPackages/importpackage.dart';
 //import 'package:json/components/app_bar_icon.dart';
 
 class HomeDashBoard extends StatefulWidget{

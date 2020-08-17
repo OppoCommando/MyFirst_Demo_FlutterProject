@@ -1,7 +1,4 @@
-import 'package:demoproject/src/Activities/LoginPage.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
+import 'package:demoproject/ImportPackages/importpackage.dart';
 
 class SingUpBottom extends StatelessWidget{
   @override
