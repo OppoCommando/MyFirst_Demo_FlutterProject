@@ -8,6 +8,7 @@ class ProfilePage extends StatelessWidget {
    return new Scaffold(
        appBar: AppBar(
          title: Text("My Profile"),
+         
        ),
        drawer: NavigationDrawer(),
        body: Center(child: Text("This is profile page")));

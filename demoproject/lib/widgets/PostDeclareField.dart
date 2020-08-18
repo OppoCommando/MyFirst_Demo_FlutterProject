@@ -15,7 +15,7 @@ PostDeclareField(String title){
     // TODO: implement build
     return Container(
               height: 100.0,
-              color: Colors.white,
+              color: facebook_dgrey_color,
               child: Row(children: <Widget>[
                 Padding(
                         padding: const EdgeInsets.all(10.0),
@@ -35,8 +35,8 @@ PostDeclareField(String title){
 
                       Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: ShiftFocusTextField("Create Your Post"),
+                        padding: const EdgeInsets.all(8.0),
+                        child: ShiftFocusTextField("Create Your Post"),
                         ),
                       ),
               ],

@@ -35,4 +35,7 @@ export 'package:demoproject/src/Fragments/GroupsPage.dart';
 export 'package:demoproject/src/Fragments/HomeDashBoard.dart';
 export 'package:demoproject/src/Fragments/HomePage.dart';
 export 'package:demoproject/widgets/CustomTapBar.dart';
+export 'package:demoproject/widgets/AppBarChatIcon.dart';
+export 'package:demoproject/src/Activities/ChatMasterPage.dart';
 
+//import 'package:demoproject/src/Activities/LoginPage.dart';

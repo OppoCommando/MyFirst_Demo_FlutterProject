@@ -1,4 +1,5 @@
 import 'package:demoproject/ImportPackages/importpackage.dart';
+
 //import 'package:json/components/app_bar_icon.dart';
 
 class HomeDashBoard extends StatefulWidget{
@@ -22,7 +23,8 @@ class HomeDashBoard extends StatefulWidget{
     return GestureDetector(
       onTap: ()=>FocusScope.of(context).unfocus(),
       child: Scaffold(
-        backgroundColor: facebook_dgrey_color,
+        //backgroundColor: facebook_dgrey_color,
+         backgroundColor: Colors.black,
         body: Responsive(
           mobile:_HomeScreenMobile(scrollController: _trackingScrollController), 
           desktop: null,
@@ -53,8 +55,8 @@ class _HomeScreenMobile  extends StatelessWidget
       slivers: <Widget>[
         SliverAppBar(
          automaticallyImplyLeading: false,
-          brightness: Brightness.light,
-          backgroundColor: Colors.white,
+          brightness: Brightness.dark,
+          backgroundColor: Colors.black,
           title:Text('Mybook',
           style: headStyle,
         ),
@@ -62,7 +64,7 @@ class _HomeScreenMobile  extends StatelessWidget
         floating: true,
          actions: <Widget>[
           AppBarSearchIcon(FontAwesomeIcons.search),
-          AppBarSearchIcon(FontAwesomeIcons.search),
+          AppBarChatIcon(FontAwesomeIcons.facebookMessenger),
           ],
         ),
 

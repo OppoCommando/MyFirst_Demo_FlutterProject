@@ -17,9 +17,11 @@ class ShiftFocusTextField extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      
       padding: const EdgeInsets.only(left : 2.0),
       child: Column(
+        
        crossAxisAlignment: CrossAxisAlignment.start,
        children: <Widget>[
          Text(

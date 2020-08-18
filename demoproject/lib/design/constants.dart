@@ -23,3 +23,8 @@ TextStyle headStyleForOther = GoogleFonts.roboto(
   textStyle: TextStyle(fontWeight: FontWeight.w900, fontSize:32,color: facebook_headtext_color,letterSpacing: 2.1,)
   
 );
+
+TextStyle chatheadStyleForOther = GoogleFonts.roboto(
+  textStyle: TextStyle(fontWeight: FontWeight.w900, fontSize:32,color: Active_facebook_color ,letterSpacing: 2.1,)
+  
+);

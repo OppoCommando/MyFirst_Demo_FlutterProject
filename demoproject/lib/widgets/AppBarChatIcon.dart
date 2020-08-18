@@ -1,9 +1,9 @@
 import 'package:demoproject/ImportPackages/importpackage.dart';
 
 // ignore: must_be_immutable
-class AppBarSearchIcon extends StatelessWidget{
+class AppBarChatIcon extends StatelessWidget{
   IconData icon;
-   AppBarSearchIcon(IconData icon)
+   AppBarChatIcon(IconData icon)
    {
      this.icon=icon;
    }
@@ -12,7 +12,7 @@ class AppBarSearchIcon extends StatelessWidget{
     // TODO: implement build
     return GestureDetector(
       onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeMain()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ChatMasterPage()));
               },
       child: Container(
         margin: EdgeInsets.all(5),
